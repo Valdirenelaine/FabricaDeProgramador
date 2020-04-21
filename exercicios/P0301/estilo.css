@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "FakeReceipt";
+    src: url("fonte/fake_receipt.ttf") format("truetype");
+}
+
+* {
+    outline: none;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.formulario {
+    margin: 20px 15%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+}
+
+.formulario label {
+    width: 30%;
+}
+
+.formulario input {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.formulario fieldset div {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.formulario input[type="radio"] {
+    width: 20px;
+}
+
+.formulario fieldset {
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.formulario fieldset legend {
+    text-align: center;
+    color: slategray;
+}
+
+.formulario fieldset select {
+    width: 100%;
+    padding: 10px;
+}
+
+.formulario .div-botoes {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formulario .div-botoes button {
+    margin: 5px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+}
+
+.btnCancelar {
+    background-color: none;
+    color: red;
+}
+
+.btnSalvar {
+    background-color: blue;
+    color: white;
+}
+
+.alerta {
+    background-color: #22ea78;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 15px;
+    bottom: -40px;
+    right: 10px;
+    width: 90%;
+    align-items: center;
+    height: 20px;
+    visibility: hidden;
+}
+
+.alerta div {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+
+.alerta img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.alerta img :last-child {
+    width: 30px;
+}
+
+.div-relatorio {
+    margin: auto;
+    width: 30%;
+    background-color: rgb(255, 246, 122);
+    font-family: "FakeReceipt", Fallback, sans-serif;
+    box-shadow: -2px 2px rgba(128, 128, 128, 0.466);
+    visibility: hidden;
+}

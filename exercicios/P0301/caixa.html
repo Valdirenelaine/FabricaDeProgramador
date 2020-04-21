@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registro de Venda</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Registro de Venda</h1>
+        <form class="formulario">
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+                <div>
+                    <label for="nome">Nome do Cliente:</label>
+                    <input id="nome" type="text" placeholder="Ex. Jão da Silva">
+                </div>
+                <div>
+                    <label for="telefone">Celular/telefone:</label>
+                    <input id="telefone" type="text" placeholder="Ex. (67)9999-9999">
+                </div>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input id="cpf" type="text" placeholder="Ex. 999.999.999-99">
+                </div>
+                <div>
+                    <label for="total">Total da Compra:</label>
+                    <input id="total" type="number" placeholder="Ex. 1.000,00">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <div>
+                    <input name="formaPag" id="rbDinheiro" value="1" type="radio" autocomplete="off">
+                    <label for="rbDinheiro">Dinheiro</label>
+                </div>
+
+                <div>
+                    <input name="formaPag" id="rbCartaocredito" value="2" type="radio" autocomplete="off">
+                    <label for="rbCartaocredito">Cartão de Crédito</label>
+                </div>
+                <div>
+                    <input name="formaPag" id="rbCartaodebito" value="3" type="radio" autocomplete="off">
+                    <label for="rbCartaodebito">Cartão de Débito</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Parcelamento</legend>
+                <div>
+                    <label for="">Quantidade de Parcelas</label>
+                    <select name="qtdParcela" id="parcela">
+                        <option value="0">Selecione</option>
+                        <option value="1">À vista</option>
+                        <option value="2">2 parcelas</option>
+                        <option value="3">3 parcelas</option>
+                        <option value="4">4 parcelas</option>
+                        <option value="5">5 parcelas</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="div-botoes">
+                <button onclick="cancelar()" class="btnCancelar" type="button">Cancelar</button>
+                <button onclick="salvar()" class="btnSalvar" type="button">Salvar</button>
+            </div>
+            <div class="alerta">
+                <div>
+                    <img id="imagem" src="img/tick.svg" alt="icone-alerta">
+                    <p>Mensagem do Alerta</p>
+                </div>
+                <img onclick=" fecharMensagem()" src="img/close.svg" alt="icone-fechar">
+            </div>
+        </form>
+        <div class="div-relatorio">
+            <pre>Cliente: Jão da Silva</pre>
+
+        </div>
+</body>
+
+</html>
