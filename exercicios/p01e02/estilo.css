@@ -1,0 +1,89 @@
+body {
+    background-color: rgba(128, 128, 128, 0.185);
+    font-family: sans-serif;
+    padding: 25px;
+}
+
+div {
+    border-radius: 1em;
+    display: inline;
+}
+
+section {
+    border-radius: 1em;
+    display: inline-block;
+}
+
+#wrap {
+    width: 960px;
+    margin: auto;
+}
+
+.card-resumo {
+    float: left;
+    padding: 0 10px 0 20px;
+    margin: 15px 15px 15px 0;
+    width: 245px;
+    height: fit-content;
+}
+
+.card-comentario {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    width: 450px;
+    height: auto;
+    min-height: 150px;
+    box-shadow: 3px 3px rgba(128, 128, 128, 0.438);
+}
+
+.fundo-azul {
+    background: rgba(0, 0, 255, 0.541);
+    color: white;
+}
+
+.fundo-branco {
+    background: white;
+    color: black;
+}
+
+h1 {
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+h2 {
+    /* clear: both; */
+    color: gray;
+    margin: 20px 20px 20px 0;
+    font-size: 12pt;
+}
+
+.card-resumo-titulo {
+    height: 2PX;
+    vertical-align: center;
+    color: gray;
+    font-size: 10pt;
+}
+
+.card-resumo-valor {
+    font-weight: bold;
+    font-size: 20pt;
+    height: 10PX;
+    vertical-align: center;
+}
+
+.card-resumo-percentual {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: center;
+}
+
+.texto-azul {
+    color: blue;
+}
+
+.texto-vermelho {
+    color: red;
+}

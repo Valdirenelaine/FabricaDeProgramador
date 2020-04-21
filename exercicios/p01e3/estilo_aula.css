@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+    padding: 0 px;
+    font-family: sans-serif;
+}
+
+.nav-menu {
+    background-color: blue;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu img {
+    width: 30px;
+}
+
+.nav-menu div {
+    display: flex;
+}
+
+h1 {
+    color: white;
+}

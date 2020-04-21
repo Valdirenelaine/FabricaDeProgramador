@@ -1,0 +1,96 @@
+/* 
+  ctrl shift p == chama o menu de busca de comando
+  ctrl ; ==comentario
+  ctrl shift seta para cima ou pra baixo === copia a linha
+  ctrl shift k == apaga a linha 
+  ctrl p === busca o arquivo
+  alt shitf f == identa o codigo
+  alt seta pra cima move a linha
+  */
+div{
+    margin-right: auto;
+    background-color: rgba(128, 0, 128, 0.212);
+    border-radius: 2em; 
+    padding: 3em;
+    width: 30%;
+    margin-left: auto;
+}
+input{
+    border: 1.2px solid white;
+    color: white;
+    display: block;
+    border-radius: 2em;
+    margin: 10px auto 10px auto;
+    width: 80%;
+    height: 35px;
+    padding: 10px 20px 10px 20px; /*espaçamento interior*/
+    background-color: transparent; /*deixar a cor transparente*/
+}
+::-webkit-input-placeholder{
+    color:white; /* altera a cor do texto dentro do input*/
+}
+button{
+    text-transform: uppercase;/*deixar em maiusculo*/
+    display: block; /*quebra  deixando na linha inteira*/
+    border-radius: 1em; /*arrendonda o canto*/
+    margin: 10px auto 10px auto; /*top right bottom left*/
+    width: 80%;
+    height: 35px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background: linear-gradient(to bottom right, deeppink, purple); /* deixar a cor gradiente*/
+    border: none;
+    transition: 1s; /* o tempo de transição*/
+}
+a{
+    display: block;
+    margin: 5px auto 5% auto;
+    color: white;
+    font-size: 10pt;
+    text-align: center;
+    text-decoration: none;  /*tira o estilo a fonte*/
+    width: fit-content;/* tamanho da largura da ancora - ocupa somente o espaço do texto*/
+    width: -moz-fit-content;/* no firefox não funciona a regra acima*/
+   
+}
+.a1{
+  color: purple;   
+}
+button:hover{/* quando passa o mouse em cima do botão*/
+    color:black;
+    /* transform: scale(1.2); aumenta o tamanho do botao */
+    background: linear-gradient(to bottom right, purple, deeppink); /* deixar a cor gradiente*/
+    /* transform: rotate(360deg); */
+}
+
+h1{ 
+    text-align: center;
+    font-weight: lighter; /*peso da fonte - espessura*/
+    }
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.logotipo{
+    height: 100px;
+    margin-top: 15px;
+}
+.login{
+    height: 50px;
+    margin-top: 10px;
+}
+input:focus{
+    border-color: purple;
+    outline: none; /* retirar a bordar da caixa quando esta no focus*/
+    border-radius: 2em;
+}
+body{
+    background-image: url(img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: sans-serif;
+}

@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(243, 238, 255);
+    font-family: sans-serif;
+    padding: 40px;
+}
+
+h1 {
+    font-weight: lighter;
+    color: rgb(37, 37, 37);
+}
+
+h2 {
+    color: gray;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px;
+    vertical-align: center;
+}
+
+.card-resumo {
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+p {
+    margin: 3px;
+}
+
+.card-comentario {
+    width: 35%;
+    background-color: white;
+    line-height: 1.7;
+    border-radius: 20px;
+    padding: 60px 40px;
+    display: inline-block;
+    margin-left: 30px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.card-resumo-titulo {
+    color: gray;
+}
+
+.card-resumo-valor {
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.fundo-azul {
+    background-color: blue;
+    color: white;
+    box-shadow: 8px 8px 8px 8px rgba(70, 70, 255, .5);
+}
+
+.texto-azul {
+    color: blue;
+}
+
+.texto-vermelho {
+    color: red;
+}
+
+.card-resumo-percentual {
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HT</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <p>Calculadora HT</p>
+        <div id="num2">0</div>
+        <input id="num1" type="number" value="0" placeholder="0">
+        <div class="div-botao">
+            <button class="num" onclick="realizarOperacao('%')">%</button>
+            <button class="num" onclick="realizarOperacao('CE')">CE</button>
+            <button class="botaoC" onclick="realizarOperacao('C')">C</button>
+            <button class="num" onclick="adicionar('7')">7</button>
+            <button class="num" onclick="adicionar('8')">8</button>
+            <button class="num" onclick="adicionar('9')">9</button>
+            <button onclick="realizarOperacao('/')" class="dividir">/</button>
+            <button class="num" onclick="adicionar('4')">4</button>
+            <button class="num" onclick="adicionar('5')">5</button>
+            <button class="num" onclick="adicionar('6')">6</button>
+            <button onclick="realizarOperacao('*')" class="multiplicar">*</button>
+            <button class="num" onclick="adicionar('1')">1</button>
+            <button class="num" onclick="adicionar('2')">2</button>
+            <button class="num" onclick="adicionar('3')">3</button>
+            <button onclick="realizarOperacao('-')" class="subtrair">-</button>
+            <button class="num" onclick="adicionar('.')">.</button>
+            <button class="num" onclick="adicionar('0')">0</button>
+            <button class="num" onclick="realizarOperacao('=')">=</button>
+            <button class="botaoSomar" onclick="realizarOperacao('+')" class="somar">+</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábrica de Programador</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="div-imagem">
+            <img id="imagem" src="img/emotion.svg" alt="icone-imagem">
+        </div>
+        <div class="div-mensagem">
+            <script>
+                limparMensagem()
+            </script>
+        </div>
+        <div class="div-footer">
+            <div dlass="div-escolha">
+                <p>Escolha a sua resposta abaixo</p>
+            </div>
+            <div class="div-botoes">
+                <button onclick="enviarMensagem('Enviada','Olá',0)" id="botaoOla">Olá</button>
+                <button onclick="enviarMensagem('Enviada','Não te gosto',1)" id="botaoNaotegosto">Não te gosto</button>
+                <button onclick="enviarMensagem('Enviada','Está elegante hoje!',2)" id="botaoElegante">Está elegante hoje!</button>
+            </div>
+            <div class="div-lixeira">
+                <button onclick="limparMensagem()" id="botaoLixeira"><img src="img/trash.svg" alt="icone-lixeira"></button>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
