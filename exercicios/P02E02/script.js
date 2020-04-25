@@ -14,12 +14,12 @@ function limparMensagem() {
 function imprimirMensagem(divMensagem, textoMensagem, tipoMensagem) {
     if (tipoMensagem == 'Recebida') {
         divMensagem.innerHTML = divMensagem.innerHTML + (`<div class = "div-recebida"> 
-                                                        <span class= "mRecebida">` + textoMensagem + `</spam> 
+                                                        <span class= "mRecebida">${textoMensagem}</spam> 
                                                         </div>`)
 
     } else {
         divMensagem.innerHTML = divMensagem.innerHTML + (`<div class = "div-enviada"> 
-                                                        <span class= "mEnviada">` + textoMensagem + `</spam> 
+                                                        <span class= "mEnviada">${textoMensagem}</spam> 
                                                         </div>`)
 
     }
