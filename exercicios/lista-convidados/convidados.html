@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Convidados</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
-    <h1>Lista de Convidados</h1>
     <form class="formulario">
-        <input type="text" placeholder="Nome do Convidado">
-        <button type="button">Adicionar</button>
+        <h1>Lista de Convidados</h1>
+        <div class="divConvidado">
+
+            <input id="nomeConvidado" type="text" placeholder="Nome do Convidado">
+            <button onclick="adicionar()" type="button">Adicionar</button>
+        </div>
+
 
     </form>
+    <section id="Lista">
+        <div>
+            <span></span>
+        </div>
 
+    </section>
 </body>
 
 </html>
