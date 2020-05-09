@@ -1,18 +1,23 @@
-let convidados = ["Jão da Silva", "Maria da Silva"]
+let nomesConvidados = ["Jão da Silva", "Maria Da Silva"]
 
 function adicionar() {
     let nome = document.getElementById("nomeConvidado").value
-    convidados.push(nome)
-    atualizarLista()
+
+    if (nome == "") {
+        alert("Preencha o nome do Convidado")
+    } else {
+        nomesConvidados.push(nome)
+        atualizarLista()
+    }
 }
 
 function atualizarLista() {
-    let lista = document.getElementById("Lista")
+    let lista = document.getElementById("divLista")
     lista.innerHTML = ""
 
-    for (let i = 0; i < convidados.length; i++) {
+    for (let i = 0; i < nomesConvidados.length; i++) {
         lista.innerHTML = `<div>
-                           <span>${convidados[i]}</span>     
+                           <span>${nomesConvidados[i]}</span>     
                            </div>`
     }
 
