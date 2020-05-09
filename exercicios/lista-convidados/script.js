@@ -16,7 +16,7 @@ function atualizarLista() {
     lista.innerHTML = ""
 
     for (let i = 0; i < nomesConvidados.length; i++) {
-        lista.innerHTML = `<div>
+        lista.innerHTML = lista.innerHTML + `<div>
                            <span>${nomesConvidados[i]}</span>     
                            </div>`
     }
