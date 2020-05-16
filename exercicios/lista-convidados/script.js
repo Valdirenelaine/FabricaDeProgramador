@@ -1,4 +1,4 @@
-let nomesConvidados = ["Jão da Silva", "Maria Da Silva"]
+let nomesConvidados = []
 
 function adicionar() {
     let nome = document.getElementById("nomeConvidado").value
@@ -14,7 +14,7 @@ function adicionar() {
     if (email == "") {
         alert("Preencha o email do Convidado")
     } else {
-        nomesConvidados.push([nome, idade, email])
+        nomesConvidados.push({ nome, idade, email })
         atualizarLista()
     }
 }
@@ -24,10 +24,15 @@ function atualizarLista() {
     lista.innerHTML = ""
 
     for (let i = 0; i < nomesConvidados.length; i++) {
+
         lista.innerHTML = lista.innerHTML + `<div>
-                           <span>${nomesConvidados[i]}</span>     
+                           <span> Nome: ${nomesConvidados[i].nome}<br>  
+                           Idade: ${nomesConvidados[i].idade} anos <br>
+                           Email: ${nomesConvidados[i].email}</span>     
                            </div>`
     }
+
+    lista.scrollTop = lista.scrollHeight - lista.clientHeight;
 
 
 }
